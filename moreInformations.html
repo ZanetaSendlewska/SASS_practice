@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Ubezpieczenia" />
+    <meta name="author" content="Nazwa Firmy, Miejscowość" />
+    <meta name="keywords" content="ubezpieczenia, samochod" />
+    <meta name="robots" content="none" />
+</head>
+
+<body onload="getParams()">
+
+    <div class="flexbox-container">
+        <div class="main">
+            <p>Insurance</p>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo Insurance" />
+        </div>
+    </div>
+
+
+    <div class="formCalculation" id="calculate">
+        <br>
+        <h1>Insurance Calculation- fill all informations </h1><br>
+        <form>
+            <label for="field_type" id="field_type">1.Type </label><br>
+
+            <input type="radio" id="car" name="type" />
+            <label for="car">Car</label><br>
+
+            <input type="radio" id="motor" name="type" />
+            <label for="motor">Motor</label><br>
+
+            <input type="radio" id="truck" name="type" />
+            <label for="truck">Truck</label><br><br>
+
+            <label for="field_brand">2.Car Brand </label><br>
+
+            <select name="car_brand" id="field_brand">
+                <option value="1">Volkswagen</option>
+                <option value="2">KIA</option>
+                <option value="3">Opel</option>
+                <option value="4">Fiat</option>
+                <option value="5">Renault</option>
+            </select><br><br>
+
+            <label for="field_productionYear">3.Production year</label><br>
+            <input type="number" name="number" id="field_productionYear" /><br><br>
+
+            <label for="field_registrationYear">4.First year of registration</label><br>
+            <input type="number" name="number" id="field_registrationYear" /><br><br>
+
+            <label for="field_age">5. Person age</label><br>
+            <input type="number" name="number" id="field_age" /><br><br>
+
+            <label for="field_fuel" id="field_fuel">6.Type of fuel </label><br>
+
+            <select name="car_fuel">
+                <option value="1">LPG</option>
+                <option value="2">Diesel</option>
+                <option value="3">Petrol</option>
+
+            </select><br><br>
+
+            <label for="field_capacity">7.Engine capacity</label><br>
+            <input type="number" name="number" id="field_capacity" /><br><br>
+
+            <label for="field_doors">8.Number of doors</label><br>
+            <input type="number" name="number" id="field_doors" /><br><br>
+
+            <label for="field_typeInsurance" id="field_typeInsurance">9.Type insurance </label><br>
+            <select name="typeInsurance">
+                <option value="1">OC</option>
+                <option value="2">AC</option>
+                <option value="3">ASSISTANCE</option>
+                <option value="4">NNW</option>
+            </select><br><br>
+
+            <label for="field_namePerson">10.Name and surname</label><br>
+            <input type="text" name="name" id="field_namePerson" /><br><br>
+
+            <input type="button" value="Confirm" onclick="validateInsurance()"> <br><br>
+
+            <div class="save">
+                <a href="auto.html">Cancel</a><br>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="auto.js"> </script>
+</html>

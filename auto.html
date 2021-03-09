@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Ubezpieczenia" />
+    <meta name="author" content="Nazwa Firmy, Miejscowość" />
+    <meta name="keywords" content="ubezpieczenia, samochod" />
+    <meta name="robots" content="none" />
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div class="main">
+            <p>Insurance</p>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="logo Insurance" />
+        </div>
+    </div>
+    <div class="menuAll">
+        <div class="menu">
+            <a href="#menu">Main</a>
+        </div>
+        <div class="calculate">
+            <a href="#calculate">Calculate Insurance</a>
+        </div>
+        <div class="advise">
+            <a href="#advise">Advise</a>
+        </div>
+        <div class="opinion">
+            <a href="#opinion">Opinion</a>
+        </div>
+    </div>
+
+    <div class="content" id="menu">
+        <div class="advertising"><br>
+            <h1>Vehicle insurance- better prices, the best quality</h1> <br>
+            <img src="advertaising.jpg" class="pictureCar" alt="samochód" />
+        </div>
+    </div>
+
+    <div class="formCalculation" id="calculate">
+        <br>
+        <div class="title1">
+            <h2> Insurance Calculation </h2> <br>
+        </div>
+        <form>
+            <label for="field_type" id="field_type">1.Type </label><br>
+
+            <input type="radio" id="car" name="type" checked />
+            <label for="car">Car</label><br>
+
+            <input type="radio" id="motor" name="type" />
+            <label for="motor">Motor</label><br>
+
+            <input type="radio" id="truck" name="type" />
+            <label for="truck">Truck</label><br><br>
+
+            <label for="field_brand">2.Car Brand </label><br>
+
+            <select name="car_brand" id="field_brand">
+                <option value="1">Volkswagen</option>
+                <option value="2">KIA</option>
+                <option value="3">Opel</option>
+                <option value="4">Fiat</option>
+                <option value="5">Renault</option>
+            </select><br><br>
+
+
+            <label for="field_productionYear">3.Production year</label><br>
+            <input type="number" name="number" id="field_productionYear" /><br><br>
+
+            <label for="field_registrationYear">4.First year of registration</label><br>
+            <input type="number" name="number" id="field_registrationYear" /><br><br>
+
+            <label for="field_age">5. Person age</label><br>
+            <input type="number" name="number" id="field_age" /><br><br>
+
+            <input type="button" value="More informations" onclick="firstValidate()"> <br><br>
+
+            <div class="save">
+                <a href="auto.html">Cancel</a><br>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <div class="title2">
+        <h2> Advice-blog </h2> <br>
+    </div>
+    </div>
+    <div class="adviseAll" id="advise">
+        <div class="article">
+            <h4>Where does it come from?</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+        </div>
+
+        <div class="article">
+            <h4>Where does it come from?</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+        </div>
+        <div class="article">
+            <h4>Where does it come from?</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h6>
+        </div>
+    </div>
+
+    </div>
+    <div class="title3">
+        <h2> Opinion </h2> <br>
+    </div>
+    </div>
+    <div class="opinionAll" id="opinion">
+        <div class="opinionPerson">
+            <h4>John Snow</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. </h6>
+        </div>
+
+        <div class="opinionPerson">
+            <h4>John Snow</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting.</h6>
+        </div>
+        <div class="opinionPerson">
+            <h4>John Snow</h4>
+            <h6>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting</h6>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="auto.js"> </script>
+
+</html>
